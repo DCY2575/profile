@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的网页</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+#welcome-section
+{
+    text-align:center;
+    
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color:#edeeeb;
+  background-image: url(图片一.webp);
+  background-origin:border-box;
+}
+ 
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(177, 130, 130);
+}
+ 
+.header h1 {
+  font-size: 50px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(14, 11, 11);
+  border-top-style:dotted;
+	border-right-style:solid;
+	border-bottom-style:dotted;
+	border-left-style:solid;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #1b2bb6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: rgb(39, 160, 23);
+  color: rgb(199, 26, 156);
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #4c7274;
+  padding-left: 20px;
+}
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: rgb(11, 85, 182);
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: rgb(66, 163, 228);
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 黑色 */
+.button {
+  background-color: #555555;
+} 
+
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(10, 37, 153);
+  margin-top: 20px;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to our website!</h1>
+  <p>如果你问一个善于溜冰的人怎样获得成功时,他会告诉你:“跌倒了,爬起来”,这就是成功。——牛顿</p>
+</div>
+
+<div class="topnav">
+  <a href="#">主页</a>
+  <a href="#">导入</a>
+  <a href="#">图片</a>
+  <a href="#">新闻</a>
+  <a href="#">联系我们</a>
+  <a href="#" style="float:right">链接</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>视频动画：聆听自然之声</h2>
+      <h5>2021年11月10日</h5>
+      <video width="320" height="240" controls autoplay>
+        <source src="movie.ogg" type="video/ogg">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        <object data="movie.mp4" width="320" height="240">
+          <embed width="320" height="240" src="movie.swf">
+        </object>
+      </video>
+      <p>人法地，地法天，天法道，道法自然。——老子</p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>2万人的管理“大劫”</h2>
+      <h5>2021年11月10日</h5>
+      <img src="微信图片_20211110160232.jpg" width="460" height="345">
+      <p id="demo">
+        励志名言</p>
+        
+        <script>
+        function myFunction()
+        {
+          document.getElementById("demo").innerHTML="Whatever is worth doing is worth doing well.";
+        }
+        </script>
+        
+        <button type="button" onclick="myFunction()">点我</button>
+      <p>  “阿里云去年就突破了2万人，腾讯CSIG（云与智慧产业事业群）不出意外下个月就能突破两万。”
+      <p>两万人是什么概念？</p>  
+      <p>腾讯全公司首次迈入2万人大关是在2012年，那时的腾讯已成立14年，QQ处于巅峰，微信大获成功。</p>
+      <p>但CSIG不过是一个成立刚满三年的子事业群，现在就超过了这个数，非常可怕。</p>
+      <p>当一个组织里的员工数井喷时，随之冒头的管理、组织问题，甚至远大于业务本身的难度。</p>
+      <p>一互联网巨头集团副总裁曾告诉雷锋网，互联网公司初期做To B最难的地方，不是怎么去拓业务、怎么去和对手打仗，而是在于考核和工作流程的转变。To B部门早期的员工，多是从To C产品线调用而来。他们需应付的工作内容，以前从未见过，更无法理解。</p>
+      <p>“举一个特别简单的例子：以往To C产品，用户向客服投诉，客服基本能给出答复，或给我们内部人员准确转达，因为产品逻辑并不复杂。但到了To B这里，客户一旦遇到产品问题，可能需要同时调用产品经理、架构师、销售一起应对，这在C端产品的客服体系里从未有过。“怎么让这些专家们形成B端的服务意识和服务能力，以及如何考核服务质量，这对互联网公司来说真的很难。业务流程、工作习惯、思维意识，全部都得转变。”</p>
+      <p>这一面是原生人员转型维艰，那一面又是外来人马水土不服。</p>
+      <p>云部门主要由三类背景的人组成：一是前文所提的，C端部门借调而来的公司“原住民”；二是老牌IT软件厂商的销售和方案交付专家，三则从政府、银行等传统机构加盟而来的甲方人。</p>
+      <p>三方的行事风格、话语体系、价值观、产品理念，各不相同，甚至有些对立。</p>
+      <p>“而人类这种动物，恰恰又喜欢找观念相符的人一起抱团。以气味相投为取向，同样也表现在人才招聘上，倾向于招和自己背景相似的人才。时间一久，自上而下和自下而上的派系慢慢形成了，例如IBM派、SAP派等等。”这位副总裁补充道。</p>
+      <p>他坦言，这种问题之前互联网公司也遇到过，但从未像现在一样针锋相对。</p>
+      <p>“云这东西，服务的行业太多，大家的背景都很杂，缺少共性。要让这么多人达成共识和文化统一，过程非常长，这中间持续发生冲突，不可避免。”</p>
+      <p>不仅是内部疑难丛生，云部门与其他部门间的摩擦和冲突，也愈演愈烈，最终造就了一场史无前例的合并运动。</p>
+    
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>网站链接</h2>
+      <a href="https://github.com/" target="_blank">访问github!</a>
+      <p>github官网</p>
+    </div>
+    <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>12小时前
+        限制数据访问，微博涉嫌垄断行为被起诉；腾讯员工破10万，人均月薪超8万；拼多多成立工会｜雷锋早报</p></div>
+      <div class="fakeimg"><p>昨天 09:41
+        腾讯宣布员工入职满15年可提前退休；特斯拉暴跌，市值2天蒸发1.3万亿；滴滴推出嗷嗷吃饭外卖业务｜雷锋早报</p></div>
+      <div class="fakeimg"><p>11月09日 10:37
+        多核狂魔，AMD公布Zen 4路线图：明年96核，后年128核！</p></div>
+    </div>
+    <div class="card">
+      <h3>热门歌曲</h3>
+      <p>friendship</p>
+      <audio controls>
+        <source src="friendships.mp3" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+      </audio>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>底部区域</h2>
+</div>
+
+</body>
+</html>
