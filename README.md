@@ -8,3 +8,4 @@
 我们深知自己还有不足之处，我们也会继续学习编写前端网页的知识，在目前的基础上实现进一步的提升。
 
 如果想要查看网站的界面，可以复制The First Website.html的代码在Visual Studio Code软件中，再用浏览器打开。
+![image](https://user-images.githubusercontent.com/91378527/144707255-21e7d989-e745-4fa2-92fc-2a137ca1646f.png)
